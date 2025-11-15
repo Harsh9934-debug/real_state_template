@@ -1,0 +1,930 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <title>Aurelius Estates • Ultra-Premium Real Estate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&amp;family=Cormorant+Garamond:wght@400;500;600&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+  <!-- Lucide -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#0A1A2F] text-white min-h-screen antialiased" style="font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
+  <div class="relative overflow-hidden bg-[#0A1A2F]">
+    <!-- Subtle Gold Light Texture -->
+    <div class="pointer-events-none fixed inset-0 opacity-30 mix-blend-screen" aria-hidden="true">
+      <div class="w-full h-full bg-[radial-gradient(circle_at_top,_rgba(212,175,55,0.24),_transparent_55%),radial-gradient(circle_at_bottom,_rgba(232,201,143,0.18),_transparent_55%)]"></div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <header class="fixed top-0 inset-x-0 z-40">
+      <div class="backdrop-blur-xl bg-[#050914]/80 border-b border-[#D4AF37]/40">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+          <!-- Logo -->
+          <div class="flex items-center gap-3">
+            <div class="flex items-center justify-center h-9 w-9 rounded-full border border-[#D4AF37]/80 bg-[#0D0D0D] shadow-[0_0_18px_rgba(212,175,55,0.5)]">
+              <span class="text-sm tracking-[0.28em] text-[#D4AF37]" style="font-family:'Playfair Display',ui-serif;">AE</span>
+            </div>
+            <div class="flex flex-col leading-tight">
+              <span class="text-sm sm:text-base tracking-[0.32em] text-white" style="font-family:'Playfair Display',ui-serif;">AURELIUS ESTATES</span>
+              
+            </div>
+          </div>
+
+          <!-- Nav Links -->
+          <nav class="hidden md:flex items-center gap-7 text-[11px] tracking-[0.26em] uppercase">
+            <a href="#hero" class="text-slate-100 hover:text-[#D4AF37] transition-colors">Home</a>
+            <a href="#featured" class="text-slate-100 hover:text-[#D4AF37] transition-colors">Properties</a>
+            <a href="#categories" class="text-slate-100 hover:text-[#D4AF37] transition-colors">Categories</a>
+            <a href="#about" class="text-slate-100 hover:text-[#D4AF37] transition-colors">About</a>
+            <a href="#details" class="text-slate-100 hover:text-[#D4AF37] transition-colors">Details</a>
+            <a href="#testimonials" class="text-slate-100 hover:text-[#D4AF37] transition-colors">Clients</a>
+          </nav>
+
+          <!-- CTA -->
+          <div class="flex items-center gap-3">
+            <button class="hidden sm:inline-flex items-center justify-center rounded-full border border-[#E8C98F]/90 px-4 py-1.5 text-[11px] tracking-[0.25em] uppercase text-[#E8C98F] bg-[#0D0D0D]/80 hover:bg-[#E8C98F]/10 hover:shadow-[0_0_22px_rgba(232,201,143,0.7)] transition-all duration-200">
+              Investor Login
+            </button>
+            <a href="#consultation" class="inline-flex items-center justify-center rounded-full border border-[#D4AF37] px-4 sm:px-5 py-1.5 text-[11px] tracking-[0.25em] uppercase text-[#0D0D0D] bg-[#D4AF37] hover:bg-[#D4AF37]/90 hover:shadow-[0_0_26px_rgba(212,175,55,0.8)] hover:-translate-y-[1px] transition-all duration-200">
+              Book Consultation
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="relative">
+      <!-- HERO -->
+      <section id="hero" class="relative min-h-screen flex items-center pt-16">
+        <!-- Background image + overlay + parallax feel -->
+        <div class="absolute inset-0">
+          <div class="w-full h-full bg-[url('https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&amp;fit=crop&amp;w=1800&amp;q=80')] bg-cover bg-center bg-fixed"></div>
+          <div class="absolute inset-0 bg-gradient-to-b from-[#050914]/90 via-[#050914]/95 to-[#050914]"></div>
+          <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(212,175,55,0.24),_transparent_55%)] mix-blend-screen"></div>
+        </div>
+
+        <div class="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24 lg:py-32 grid lg:grid-cols-[1.15fr,0.85fr] gap-12 lg:gap-16 items-center">
+          <!-- Hero Text -->
+          <div class="space-y-6 sm:space-y-8">
+            <div class="inline-flex items-center gap-3 rounded-full border border-[#E8C98F]/40 bg-[#0D0D0D]/70 px-4 py-1.5 text-[11px] tracking-[0.25em] uppercase text-slate-200 shadow-[0_0_18px_rgba(0,0,0,0.85)]">
+              <span class="h-1.5 w-1.5 rounded-full bg-[#D4AF37] shadow-[0_0_10px_rgba(212,175,55,0.9)]"></span>
+              <span>Global Ultra-Prime Property Advisory</span>
+            </div>
+
+            <div class="space-y-4 sm:space-y-5">
+              <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-[50px] leading-tight tracking-tight text-white" style="font-family:'Playfair Display',ui-serif;">
+                Curating <span class="italic text-[#E8C98F]">rare</span> assets<br class="hidden sm:block">
+                for exceptional lives.
+              </h1>
+              <p class="text-sm sm:text-base text-slate-100 max-w-xl leading-relaxed">
+                Aurelius Estates represents a discreet portfolio of penthouses, waterfront villas, and trophy assets in the world’s most coveted postcodes—crafted for family offices, HNWIs, and institutional investors.
+              </p>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-4 sm:gap-6">
+              <a href="#featured" class="inline-flex items-center justify-center rounded-full border border-[#D4AF37] bg-[#0D0D0D]/80 px-6 sm:px-8 py-2.5 text-[11px] tracking-[0.25em] uppercase text-[#D4AF37] shadow-[0_0_22px_rgba(0,0,0,0.9)] hover:bg-[#D4AF37]/10 hover:shadow-[0_0_30px_rgba(212,175,55,0.8)] hover:-translate-y-[2px] transition-all duration-200">
+                Explore Listings
+              </a>
+              <a href="#consultation" class="inline-flex items-center justify-center rounded-full border border-[#E8C98F]/70 bg-transparent px-6 sm:px-8 py-2.5 text-[11px] tracking-[0.25em] uppercase text-slate-100 hover:bg-white/5 hover:border-[#D4AF37] hover:text-[#E8C98F] transition-all duration-200">
+                Book a Consultation
+              </a>
+            </div>
+
+            <div class="flex flex-wrap gap-8 text-xs text-slate-300">
+              <div class="space-y-1">
+                <p class="tracking-[0.26em] uppercase text-slate-200">US$ 2M–80M</p>
+                <p class="text-[11px] text-slate-300">Transaction range across global ultra-prime markets.</p>
+              </div>
+              <div class="space-y-1">
+                <p class="tracking-[0.26em] uppercase text-slate-200">32+ Cities</p>
+                <p class="text-[11px] text-slate-300">From London &amp; Dubai to Singapore &amp; New York.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Card -->
+          <div class="relative">
+            <div class="absolute -inset-0.5 rounded-3xl border border-[#E8C98F]/25 bg-[radial-gradient(circle_at_top,_rgba(232,201,143,0.35),_transparent_55%)] opacity-80"></div>
+            <div class="relative rounded-3xl overflow-hidden border border-[#D4AF37]/50 bg-[#0D0D0D]/85 shadow-[0_26px_80px_rgba(0,0,0,1)]">
+              <div class="relative h-72 sm:h-80">
+                <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="Ultra-luxury penthouse with skyline view" class="h-full w-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#050914] via-[#050914]/60 to-transparent"></div>
+
+                <div class="absolute top-4 left-4">
+                  <span class="inline-flex items-center rounded-full border border-[#D4AF37]/80 bg-[#0D0D0D]/90 px-3 py-1 text-[10px] tracking-[0.25em] uppercase text-[#D4AF37]">
+                    Flagship Listing
+                  </span>
+                </div>
+
+                <div class="absolute bottom-0 inset-x-0 p-5 sm:p-6">
+                  <div class="flex items-center justify-between gap-4">
+                    <div class="space-y-1">
+                      <p class="text-[11px] tracking-[0.26em] uppercase text-slate-300">Skyline Penthouse • Level 52</p>
+                      <p class="text-sm sm:text-[15px] text-white" style="font-family:'Playfair Display',ui-serif;">One Hyde Skyline Residence</p>
+                      <p class="text-xs text-slate-300">
+                        Knightsbridge, London • 7,800 sq ft • 5 Bed • 6.5 Bath
+                      </p>
+                    </div>
+                    <div class="text-right text-xs text-slate-100">
+                      <p class="tracking-[0.24em] uppercase text-slate-300 mb-1">Guide Price</p>
+                      <p class="text-sm text-[#E8C98F]">£38,000,000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="border-t border-[#D4AF37]/30 bg-[#050914]/95 px-5 sm:px-6 py-4 flex flex-wrap items-center justify-between gap-4 text-[11px] text-slate-200">
+                <div class="flex items-center gap-3">
+                  <div class="h-8 w-8 rounded-full border border-[#D4AF37]/80 flex items-center justify-center">
+                    <svg data-lucide="shield-check" class="w-4 h-4 text-[#D4AF37]" stroke-width="1.5" fill="none"></svg>
+                  </div>
+                  <div>
+                    <p class="tracking-[0.24em] uppercase text-slate-300">Off-Market</p>
+                    <p class="text-[11px] text-slate-200">Available to qualified buyers upon verification.</p>
+                  </div>
+                </div>
+                <div class="flex flex-col items-start sm:items-end text-[11px] text-slate-300">
+                  <p>Dedicated Senior Advisor</p>
+                  <p class="mt-0.5 text-slate-400">Discretion assured • NDAs available on request</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED PROPERTIES -->
+      <section id="featured" class="relative py-20 sm:py-24 bg-[#050914]">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between gap-4 mb-10 sm:mb-12">
+            <div>
+              <p class="text-[11px] tracking-[0.26em] uppercase text-[#E8C98F]">Featured Portfolio</p>
+              <h2 class="mt-2 text-2xl sm:text-3xl tracking-tight text-white" style="font-family:'Playfair Display',ui-serif;">
+                Ultra-prime residences, curated for discerning buyers.
+              </h2>
+              <p class="mt-2 text-sm text-slate-200 max-w-xl">
+                A selection of our most notable assets, spanning penthouses, beachfront villas, and institutional-grade investment properties.
+              </p>
+            </div>
+            <button class="hidden sm:inline-flex items-center gap-2 text-[11px] tracking-[0.25em] uppercase text-slate-100 hover:text-[#D4AF37] transition-colors">
+              View All Listings
+              <svg data-lucide="arrow-right" class="w-3.5 h-3.5" stroke-width="1.5"></svg>
+            </button>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6 lg:gap-7">
+            <!-- Card 1 -->
+            <article class="group relative rounded-3xl overflow-hidden border border-white/10 bg-gradient-to-b from-white/5 via-[#0D0D0D]/95 to-[#050914] backdrop-blur-md shadow-[0_24px_70px_rgba(0,0,0,1)] hover:shadow-[0_30px_90px_rgba(0,0,0,1)] transition-all duration-300">
+              <div class="relative h-52 sm:h-56 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1505843186271-51cf88a5d2b4?auto=format&amp;fit=crop&amp;w=1100&amp;q=80" alt="Luxury clifftop villa" class="h-full w-full object-cover group-hover:scale-[1.03] transition-transform duration-300">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#050914] via-black/30 to-transparent"></div>
+                <div class="absolute top-3 left-3 flex flex-col gap-2">
+                  <span class="inline-flex items-center rounded-full border border-[#D4AF37]/90 bg-[#0D0D0D]/90 px-3 py-1 text-[10px] tracking-[0.25em] uppercase text-[#D4AF37]">
+                    New
+                  </span>
+                </div>
+                <div class="absolute bottom-3 right-3">
+                  <span class="inline-flex rounded-full bg-[#050914]/85 px-3 py-1 text-[11px] text-[#E8C98F] border border-[#E8C98F]/60">
+                    €18,900,000
+                  </span>
+                </div>
+              </div>
+              <div class="px-4 sm:px-5 pt-4 pb-5 space-y-3">
+                <div class="flex items-start justify-between gap-3">
+                  <div>
+                    <h3 class="text-[15px] tracking-tight text-white" style="font-family:'Playfair Display',ui-serif;">
+                      Aurelia Clifftop Villa
+                    </h3>
+                    <p class="mt-1 text-[11px] tracking-[0.22em] uppercase text-slate-300">
+                      Cap d'Antibes, French Riviera
+                    </p>
+                  </div>
+                </div>
+                <p class="text-xs text-slate-200 leading-relaxed">
+                  9,200 sq ft • 6 Bed • 7 Bath • 3-pool terraced gardens • Private mooring access.
+                </p>
+                <div class="flex items-center justify-between text-[11px] text-slate-300 pt-2 border-t border-white/10">
+                  <div class="flex items-center gap-3">
+                    <span>9,200 sq ft</span>
+                    <span class="h-3 w-px bg-white/20"></span>
+                    <span>6 Bed</span>
+                    <span class="h-3 w-px bg-white/20"></span>
+                    <span>7 Bath</span>
+                  </div>
+                  <button class="inline-flex items-center gap-1 text-[11px] tracking-[0.22em] uppercase text-[#E8C98F] hover:text-[#D4AF37] transition-colors">
+                    View Details
+                    <svg data-lucide="chevron-right" class="w-3 h-3" stroke-width="1.5"></svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="group relative rounded-3xl overflow-hidden border border-white/10 bg-gradient-to-b from-white/5 via-[#0D0D0D]/95 to-[#050914] backdrop-blur-md shadow-[0_24px_70px_rgba(0,0,0,1)] hover:shadow-[0_30px_90px_rgba(0,0,0,1)] transition-all duration-300">
+              <div class="relative h-52 sm:h-56 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1469796466635-455ede028aca?auto=format&amp;fit=crop&amp;w=1100&amp;q=80" alt="Skyscraper penthouse" class="h-full w-full object-cover group-hover:scale-[1.03] transition-transform duration-300">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#050914] via-black/30 to-transparent"></div>
+                <div class="absolute top-3 left-3 flex flex-col gap-2">
+                  <span class="inline-flex items-center rounded-full border border-[#D4AF37]/90 bg-[#0D0D0D]/90 px-3 py-1 text-[10px] tracking-[0.25em] uppercase text-[#D4AF37]">
+                    Premium
+                  </span>
+                </div>
+                <div class="absolute bottom-3 right-3">
+                  <span class="inline-flex rounded-full bg-[#050914]/85 px-3 py-1 text-[11px] text-[#E8C98F] border border-[#E8C98F]/60">
+                    US$ 24,500,000
+                  </span>
+                </div>
+              </div>
+              <div class="px-4 sm:px-5 pt-4 pb-5 space-y-3">
+                <div class="flex items-start justify-between gap-3">
+                  <div>
+                    <h3 class="text-[15px] tracking-tight text-white" style="font-family:'Playfair Display',ui-serif;">
+                      Manhattan Sky Signature 77
+                    </h3>
+                    <p class="mt-1 text-[11px] tracking-[0.22em] uppercase text-slate-300">
+                      Central Park South, New York
+                    </p>
+                  </div>
+                </div>
+                <p class="text-xs text-slate-200 leading-relaxed">
+                  5,400 sq ft • 4 Bed • 5.5 Bath • 270° park skyline views • 3-car private garage.
+                </p>
+                <div class="flex items-center justify-between text-[11px] text-slate-300 pt-2 border-t border-white/10">
+                  <div class="flex items-center gap-3">
+                    <span>5,400 sq ft</span>
+                    <span class="h-3 w-px bg-white/20"></span>
+                    <span>4 Bed</span>
+                    <span class="h-3 w-px bg-white/20"></span>
+                    <span>5.5 Bath</span>
+                  </div>
+                  <button class="inline-flex items-center gap-1 text-[11px] tracking-[0.22em] uppercase text-[#E8C98F] hover:text-[#D4AF37] transition-colors">
+                    View Details
+                    <svg data-lucide="chevron-right" class="w-3 h-3" stroke-width="1.5"></svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="group relative rounded-3xl overflow-hidden border border-white/10 bg-gradient-to-b from-white/5 via-[#0D0D0D]/95 to-[#050914] backdrop-blur-md shadow-[0_24px_70px_rgba(0,0,0,1)] hover:shadow-[0_30px_90px_rgba(0,0,0,1)] transition-all duration-300">
+              <div class="relative h-52 sm:h-56 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1529424301806-4be0bb154e3b?auto=format&amp;fit=crop&amp;w=1100&amp;q=80" alt="Modern commercial tower at night" class="h-full w-full object-cover group-hover:scale-[1.03] transition-transform duration-300">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#050914] via-black/30 to-transparent"></div>
+                <div class="absolute top-3 left-3 flex flex-col gap-2">
+                  <span class="inline-flex items-center rounded-full border border-[#D4AF37]/90 bg-[#0D0D0D]/90 px-3 py-1 text-[10px] tracking-[0.25em] uppercase text-[#D4AF37]">
+                    Luxury
+                  </span>
+                </div>
+                <div class="absolute bottom-3 right-3">
+                  <span class="inline-flex rounded-full bg-[#050914]/85 px-3 py-1 text-[11px] text-[#E8C98F] border border-[#E8C98F]/60">
+                    Confidential
+                  </span>
+                </div>
+              </div>
+              <div class="px-4 sm:px-5 pt-4 pb-5 space-y-3">
+                <div class="flex items-start justify-between gap-3">
+                  <div>
+                    <h3 class="text-[15px] tracking-tight text-white" style="font-family:'Playfair Display',ui-serif;">
+                      Prime European Office Tower
+                    </h3>
+                    <p class="mt-1 text-[11px] tracking-[0.22em] uppercase text-slate-300">
+                      Western Europe • Core CBD
+                    </p>
+                  </div>
+                </div>
+                <p class="text-xs text-slate-200 leading-relaxed">
+                  320,000 sq ft Grade A office • 3.8% net yield • Triple-A covenant tenants • Long WAULT.
+                </p>
+                <div class="flex items-center justify-between text-[11px] text-slate-300 pt-2 border-t border-white/10">
+                  <div class="flex items-center gap-3">
+                    <span>Core+ Strategy</span>
+                    <span class="h-3 w-px bg-white/20"></span>
+                    <span>Stabilised</span>
+                  </div>
+                  <button class="inline-flex items-center gap-1 text-[11px] tracking-[0.22em] uppercase text-[#E8C98F] hover:text-[#D4AF37] transition-colors">
+                    Request Memorandum
+                    <svg data-lucide="chevron-right" class="w-3 h-3" stroke-width="1.5"></svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROPERTY CATEGORIES -->
+      <section id="categories" class="relative py-20 sm:py-24 bg-[#050914]">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10 sm:mb-12">
+            <div>
+              <p class="text-[11px] tracking-[0.26em] uppercase text-[#E8C98F]">Property Categories</p>
+              <h2 class="mt-2 text-2xl sm:text-3xl tracking-tight text-white" style="font-family:'Playfair Display',ui-serif;">
+                Structured portfolios for lifestyle and yield.
+              </h2>
+            </div>
+            <p class="text-[11px] text-slate-300 max-w-xs">
+              From legacy family homes to institutional-grade assets, we help you curate the right mix for your objectives.
+            </p>
+          </div>
+
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-7">
+            <!-- Villas -->
+            <div class="rounded-2xl border border-white/10 bg-[#0D0D0D]/80 px-4 py-5 hover:border-[#D4AF37]/70 hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] transition-all duration-200">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="h-9 w-9 rounded-full border border-[#D4AF37]/80 flex items-center justify-center bg-[#050914]">
+                  <svg data-lucide="home" class="w-4 h-4 text-[#E8C98F]" stroke-width="1.5" fill="none"></svg>
+                </div>
+                <h3 class="text-sm tracking-tight text-white" style="font-family:'Playfair Display',ui-serif;">
+                  Villas &amp; Estates
+                </h3>
+              </div>
+              <div class="h-px w-10 bg-gradient-to-r from-[#D4AF37] via-[#E8C98F] to-transparent mb-3"></div>
+              <p class="text-xs text-slate-200">
+                Coastal, countryside, and clifftop residences designed as multi-generational legacy homes.
+              </p>
+            </div>
+
+            <!-- Apartments -->
+            <div class="rounded-2xl border border-white/10 bg-[#0D0D0D]/80 px-4 py-5 hover:border-[#D4AF37]/70 hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] transition-all duration-200">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="h-9 w-9 rounded-full border border-[#D4AF37]/80 flex items-center justify-center bg-[#050914]">
+                  <svg data-lucide="building-2" class="w-4 h-4 text-[#E8C98F]" stroke-width="1.5" fill="none"></svg>
+                </div>
+                <h3 class="text-sm tracking-tight text-white" style="font-family:'Playfair Display',ui-serif;">
+                  Penthouses &amp; Residences
+                </h3>
+              </div>
+              <div class="h-px w-10 bg-gradient-to-r from-[#D4AF37] via-[#E8C98F] to-transparent mb-3"></div>
+              <p class="text-xs text-slate-200">
+                Trophy apartments in global gateway cities, with concierge, security, and amenities.
+              </p>
+            </div>
+
+            <!-- Commercial -->
+            <div class="rounded-2xl border border-white/10 bg-[#0D0D0D]/80 px-4 py-5 hover:border-[#D4AF37]/70 hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] transition-all duration-200">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="h-9 w-9 rounded-full border border-[#D4AF37]/80 flex items-center justify-center bg-[#050914]">
+                  <svg data-lucide="briefcase" class="w-4 h-4 text-[#E8C98F]" stroke-width="1.5" fill="none"></svg>
+                </div>
+                <h3 class="text-sm tracking-tight text-white" style="font-family:'Playfair Display',ui-serif;">
+                  Commercial &amp; Office
+                </h3>
+              </div>
+              <div class="h-px w-10 bg-gradient-to-r from-[#D4AF37] via-[#E8C98F] to-transparent mb-3"></div>
+              <p class="text-xs text-slate-200">
+                Grade A office towers, boutique retail, and hospitality assets in core locations.
+              </p>
+            </div>
+
+            <!-- Investment -->
+            <div class="rounded-2xl border border-white/10 bg-[#0D0D0D]/80 px-4 py-5 hover:border-[#D4AF37]/70 hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] transition-all duration-200">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="h-9 w-9 rounded-full border border-[#D4AF37]/80 flex items-center justify-center bg-[#050914]">
+                  <svg data-lucide="line-chart" class="w-4 h-4 text-[#E8C98F]" stroke-width="1.5" fill="none"></svg>
+                </div>
+                <h3 class="text-sm tracking-tight text-white" style="font-family:'Playfair Display',ui-serif;">
+                  Investment Portfolios
+                </h3>
+              </div>
+              <div class="h-px w-10 bg-gradient-to-r from-[#D4AF37] via-[#E8C98F] to-transparent mb-3"></div>
+              <p class="text-xs text-slate-200">
+                Structured, yield-focused portfolios for family offices, funds, and institutional capital.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY CHOOSE US / ABOUT -->
+      <section id="about" class="relative py-20 sm:py-24 bg-[#050914]">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-[1.05fr,0.95fr] gap-12 lg:gap-16 items-center">
+          <!-- Text -->
+          <div class="space-y-6 sm:space-y-8">
+            <div class="space-y-2">
+              <p class="text-[11px] tracking-[0.26em] uppercase text-[#E8C98F]">Why Aurelius Estates</p>
+              <h2 class="text-2xl sm:text-3xl lg:text-[30px] tracking-tight text-white" style="font-family:'Playfair Display',ui-serif;">
+                Trusted advisors for families, investors, and institutions.
+              </h2>
+            </div>
+            <p class="text-sm sm:text-[15px] text-slate-100 leading-relaxed">
+              We operate at the intersection of real estate, finance, and private wealth. Our role is to curate and execute bespoke strategies for the acquisition, disposition, and long-term stewardship of ultra-prime assets.
+            </p>
+            <p class="text-sm sm:text-[15px] text-slate-200 leading-relaxed">
+              Every mandate is handled discreetly by a senior advisory team with backgrounds in private banking, institutional real estate, and global wealth management.
+            </p>
+
+            <div class="grid sm:grid-cols-2 gap-4 text-xs sm:text-[13px] text-slate-100">
+              <div class="flex items-start gap-3">
+                <div class="mt-0.5 h-8 w-8 rounded-full border border-[#D4AF37]/80 flex items-center justify-center bg-[#050914]">
+                  <svg data-lucide="user-check" class="w-4 h-4 text-[#E8C98F]" stroke-width="1.5" fill="none"></svg>
+                </div>
+                <div>
+                  <p class="tracking-[0.24em] uppercase text-[10px] text-slate-300 mb-1">Trusted Advisors</p>
+                  <p>Dedicated, senior-only advisory—no junior handoffs.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="mt-0.5 h-8 w-8 rounded-full border border-[#D4AF37]/80 flex items-center justify-center bg-[#050914]">
+                  <svg data-lucide="badge-check" class="w-4 h-4 text-[#E8C98F]" stroke-width="1.5" fill="none"></svg>
+                </div>
+                <div>
+                  <p class="tracking-[0.24em] uppercase text-[10px] text-slate-300 mb-1">Verified Properties</p>
+                  <p>All assets undergo legal, technical, and title due diligence.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="mt-0.5 h-8 w-8 rounded-full border border-[#D4AF37]/80 flex items-center justify-center bg-[#050914]">
+                  <svg data-lucide="globe-2" class="w-4 h-4 text-[#E8C98F]" stroke-width="1.5" fill="none"></svg>
+                </div>
+                <div>
+                  <p class="tracking-[0.24em] uppercase text-[10px] text-slate-300 mb-1">Prime Locations</p>
+                  <p>Access to off-market and pre-market opportunities in key cities.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="mt-0.5 h-8 w-8 rounded-full border border-[#D4AF37]/80 flex items-center justify-center bg-[#050914]">
+                  <svg data-lucide="handshake" class="w-4 h-4 text-[#E8C98F]" stroke-width="1.5" fill="none"></svg>
+                </div>
+                <div>
+                  <p class="tracking-[0.24em] uppercase text-[10px] text-slate-300 mb-1">End-to-End Support</p>
+                  <p>From negotiation and structuring to post-completion asset care.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-6 pt-1">
+              <div class="flex items-center gap-3">
+                <div class="h-10 w-10 rounded-full border border-[#D4AF37]/80 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&amp;fit=crop&amp;w=300&amp;q=80" alt="Managing Partner portrait" class="w-full h-full object-cover">
+                </div>
+                <div class="text-xs">
+                  <p class="text-slate-50">Alexandre Verne</p>
+                  <p class="text-[11px] text-slate-400 tracking-[0.22em] uppercase">Managing Partner</p>
+                </div>
+              </div>
+              <p class="text-[11px] text-slate-300 max-w-xs">
+                “Our mandate is simple: protect capital, preserve privacy, and create generational value.”
+              </p>
+            </div>
+          </div>
+
+          <!-- Image -->
+          <div class="relative">
+            <div class="absolute -inset-0.5 rounded-3xl border border-[#E8C98F]/25 bg-[radial-gradient(circle_at_top,_rgba(232,201,143,0.35),_transparent_55%)] opacity-80"></div>
+            <div class="relative rounded-3xl overflow-hidden border border-white/15 bg-[#0D0D0D]/85 shadow-[0_26px_80px_rgba(0,0,0,1)]">
+              <div class="h-64 sm:h-80 lg:h-96 relative">
+                <img src="https://images.unsplash.com/photo-1529424301806-4be0bb154e3b?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="Modern luxury office lobby" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-tr from-[#050914]/80 via-[#050914]/40 to-transparent"></div>
+              </div>
+              <div class="border-t border-white/10 bg-[#050914]/95 px-5 sm:px-6 py-4 flex items-center justify-between gap-4 text-xs text-slate-200">
+                <div>
+                  <p class="tracking-[0.24em] uppercase text-[10px] text-slate-400">Global Presence</p>
+                  <p class="mt-1 text-slate-100">London • Dubai • Singapore • New York • Zurich</p>
+                </div>
+                <div class="text-right text-[11px] text-slate-300">
+                  <p>Regulated entity • AML / KYC compliant</p>
+                  <p class="mt-0.5">Multi-jurisdictional transaction support</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROPERTY DETAILS (DEMO PAGE LAYOUT) -->
+      <section id="details" class="relative py-20 sm:py-24 bg-[#050914]">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-12">
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+            <div>
+              <p class="text-[11px] tracking-[0.26em] uppercase text-[#E8C98F]">Property Detail Layout</p>
+              <h2 class="mt-2 text-2xl sm:text-3xl tracking-tight text-white" style="font-family:'Playfair Display',ui-serif;">
+                Example: “One Hyde Skyline Residence”
+              </h2>
+              <p class="mt-2 text-sm text-slate-200 max-w-xl">
+                A demonstration of how we present each flagship property—clear, precise, and investor-ready.
+              </p>
+            </div>
+            <div class="text-xs text-slate-300">
+              <p class="tracking-[0.22em] uppercase">Guide Price</p>
+              <p class="mt-1 text-[#E8C98F] text-sm">£38,000,000</p>
+            </div>
+          </div>
+
+          <!-- Layout -->
+          <div class="grid lg:grid-cols-[1.25fr,0.9fr] gap-10 lg:gap-12">
+            <!-- Left: Slider + Amenities + Floorplan -->
+            <div class="space-y-7">
+              <!-- Slider Preview -->
+              <div class="relative rounded-3xl overflow-hidden border border-white/15 bg-[#0D0D0D]/90 shadow-[0_26px_80px_rgba(0,0,0,1)]">
+                <div class="h-64 sm:h-72 lg:h-80 relative">
+                  <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&amp;fit=crop&amp;w=1400&amp;q=80" alt="Main living room" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 bg-gradient-to-t from-[#050914]/85 via-transparent to-transparent"></div>
+                  <div class="absolute bottom-4 left-4 flex gap-2">
+                    <span class="inline-flex rounded-full bg-[#050914]/85 px-3 py-1 text-[11px] text-slate-100 border border-white/30">
+                      Living Lounge
+                    </span>
+                    <span class="inline-flex rounded-full bg-[#050914]/70 px-3 py-1 text-[11px] text-slate-100 border border-white/20">
+                      Photo 1 / 8
+                    </span>
+                  </div>
+                  <div class="absolute inset-y-0 left-0 right-0 flex items-center justify-between px-3 pointer-events-none">
+                    <button class="pointer-events-auto inline-flex items-center justify-center h-8 w-8 rounded-full bg-[#050914]/70 border border-white/30 text-white hover:border-[#D4AF37] hover:text-[#D4AF37] transition-colors">
+                      <svg data-lucide="chevron-left" class="w-4 h-4" stroke-width="1.5"></svg>
+                    </button>
+                    <button class="pointer-events-auto inline-flex items-center justify-center h-8 w-8 rounded-full bg-[#050914]/70 border border-white/30 text-white hover:border-[#D4AF37] hover:text-[#D4AF37] transition-colors">
+                      <svg data-lucide="chevron-right" class="w-4 h-4" stroke-width="1.5"></svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- Thumbnails -->
+                <div class="border-t border-white/10 bg-[#050914]/95 px-4 sm:px-5 py-3 flex gap-3 overflow-x-auto text-[11px]">
+                  <div class="flex-shrink-0 h-14 w-20 rounded-xl overflow-hidden border-2 border-[#D4AF37]/80">
+                    <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&amp;fit=crop&amp;w=600&amp;q=80" class="h-full w-full object-cover" alt="">
+                  </div>
+                  <div class="flex-shrink-0 h-14 w-20 rounded-xl overflow-hidden border border-white/20">
+                    <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&amp;fit=crop&amp;w=601&amp;q=80" class="h-full w-full object-cover" alt="">
+                  </div>
+                  <div class="flex-shrink-0 h-14 w-20 rounded-xl overflow-hidden border border-white/20">
+                    <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&amp;fit=crop&amp;w=602&amp;q=80" class="h-full w-full object-cover" alt="">
+                  </div>
+                  <div class="flex-shrink-0 h-14 w-20 rounded-xl overflow-hidden border border-white/20">
+                    <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&amp;fit=crop&amp;w=603&amp;q=80" class="h-full w-full object-cover" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Amenities -->
+              <div class="rounded-3xl border border-white/15 bg-[#0D0D0D]/90 px-5 sm:px-6 py-5">
+                <div class="flex items-center justify-between mb-3">
+                  <p class="text-[11px] tracking-[0.26em] uppercase text-[#E8C98F]">Key Amenities</p>
+                  <span class="text-[11px] text-slate-300">Highlighting lifestyle &amp; value drivers.</span>
+                </div>
+                <div class="grid sm:grid-cols-3 gap-4 text-xs text-slate-100">
+                  <div class="space-y-1.5">
+                    <p class="tracking-[0.22em] uppercase text-[10px] text-slate-300">Wellness</p>
+                    <ul class="space-y-1 text-slate-200">
+                      <li>Private spa &amp; hammam</li>
+                      <li>Infinity lap pool</li>
+                      <li>Technogym studio</li>
+                    </ul>
+                  </div>
+                  <div class="space-y-1.5">
+                    <p class="tracking-[0.22em] uppercase text-[10px] text-slate-300">Security</p>
+                    <ul class="space-y-1 text-slate-200">
+                      <li>24/7 concierge &amp; CCTV</li>
+                      <li>Secure private lift</li>
+                      <li>Panic room ready</li>
+                    </ul>
+                  </div>
+                  <div class="space-y-1.5">
+                    <p class="tracking-[0.22em] uppercase text-[10px] text-slate-300">Entertaining</p>
+                    <ul class="space-y-1 text-slate-200">
+                      <li>Skyline terrace</li>
+                      <li>Wine cellar (800 bottles)</li>
+                      <li>Cigar lounge</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floor Plan -->
+              <div class="rounded-3xl border border-white/15 bg-[#0D0D0D]/90 px-5 sm:px-6 py-5">
+                <div class="flex items-center justify-between mb-3">
+                  <p class="text-[11px] tracking-[0.26em] uppercase text-[#E8C98F]">Floor Plan Overview</p>
+                  <button class="inline-flex items-center gap-1 text-[11px] tracking-[0.22em] uppercase text-slate-100 hover:text-[#D4AF37] transition-colors">
+                    Download PDF
+                    <svg data-lucide="download" class="w-3.5 h-3.5" stroke-width="1.5"></svg>
+                  </button>
+                </div>
+                <div class="h-40 sm:h-48 rounded-2xl border border-dashed border-white/30 flex items-center justify-center bg-[#050914]">
+                  <span class="text-[11px] text-slate-400">
+                    Floor plan preview placeholder (Level 52 &amp; 53)
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Key Info + Map + Inquiry -->
+            <div class="space-y-6">
+              <!-- Key Info -->
+              <div class="rounded-3xl border border-[#D4AF37]/60 bg-[#0D0D0D]/90 px-5 sm:px-6 py-5 shadow-[0_18px_60px_rgba(0,0,0,1)]">
+                <p class="text-[11px] tracking-[0.26em] uppercase text-[#E8C98F] mb-3">Key Information</p>
+                <div class="grid grid-cols-2 gap-4 text-xs text-slate-100">
+                  <div>
+                    <p class="text-[10px] tracking-[0.22em] uppercase text-slate-400 mb-1">Location</p>
+                    <p>Knightsbridge, London SW1</p>
+                  </div>
+                  <div>
+                    <p class="text-[10px] tracking-[0.22em] uppercase text-slate-400 mb-1">Size</p>
+                    <p>Approx. 7,800 sq ft</p>
+                  </div>
+                  <div>
+                    <p class="text-[10px] tracking-[0.22em] uppercase text-slate-400 mb-1">Configuration</p>
+                    <p>5 Bed • 6.5 Bath • 4 Parking</p>
+                  </div>
+                  <div>
+                    <p class="text-[10px] tracking-[0.22em] uppercase text-slate-400 mb-1">Tenure</p>
+                    <p>Long leasehold</p>
+                  </div>
+                  <div>
+                    <p class="text-[10px] tracking-[0.22em] uppercase text-slate-400 mb-1">Status</p>
+                    <p>Vacant possession</p>
+                  </div>
+                  <div>
+                    <p class="text-[10px] tracking-[0.22em] uppercase text-slate-400 mb-1">Reference</p>
+                    <p>AE-LON-SKY-052</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Map -->
+              <div class="rounded-3xl border border-white/15 bg-[#0D0D0D]/90 overflow-hidden">
+                <div class="h-40 sm:h-48 bg-[url('https://images.unsplash.com/photo-1506377295352-e3154d43ea9e?auto=format&amp;fit=crop&amp;w=1200&amp;q=80')] bg-cover bg-center relative">
+                  <div class="absolute inset-0 bg-[#050914]/70 mix-blend-multiply"></div>
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="rounded-full border border-[#D4AF37] bg-[#050914]/80 px-4 py-2 text-xs text-slate-100 flex items-center gap-2 shadow-[0_0_22px_rgba(212,175,55,0.7)]">
+                      <svg data-lucide="map-pin" class="w-4 h-4 text-[#D4AF37]" stroke-width="1.5" fill="none"></svg>
+                      <span>Knightsbridge • Central London</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-t border-white/10 bg-[#050914]/95 px-5 py-3 text-[11px] text-slate-300">
+                  <p>
+                    Detailed mapping, transport links, and lifestyle amenities available in our investor briefings.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Inquiry Form -->
+              <div class="rounded-3xl border border-[#D4AF37]/60 bg-[#0D0D0D]/95 px-5 sm:px-6 py-5">
+                <p class="text-[11px] tracking-[0.26em] uppercase text-[#E8C98F] mb-3">Confidential Inquiry</p>
+                <form class="space-y-3 text-xs">
+                  <div>
+                    <label class="block mb-1 text-[11px] tracking-[0.22em] uppercase text-slate-200">Full Name</label>
+                    <input type="text" placeholder="Your full legal name" class="w-full rounded-full border border-[#E8C98F]/40 bg-[#050914] px-3.5 py-2 text-xs text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-[#D4AF37] focus:border-[#D4AF37] transition-all">
+                  </div>
+                  <div>
+                    <label class="block mb-1 text-[11px] tracking-[0.22em] uppercase text-slate-200">Email</label>
+                    <input type="email" placeholder="you@familyoffice.com" class="w-full rounded-full border border-[#E8C98F]/40 bg-[#050914] px-3.5 py-2 text-xs text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-[#D4AF37] focus:border-[#D4AF37] transition-all">
+                  </div>
+                  <div>
+                    <label class="block mb-1 text-[11px] tracking-[0.22em] uppercase text-slate-200">Preferred Contact Number</label>
+                    <input type="text" placeholder="+44 ..." class="w-full rounded-full border border-[#E8C98F]/40 bg-[#050914] px-3.5 py-2 text-xs text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-[#D4AF37] focus:border-[#D4AF37] transition-all">
+                  </div>
+                  <div>
+                    <label class="block mb-1 text-[11px] tracking-[0.22em] uppercase text-slate-200">Message</label>
+                    <textarea rows="3" placeholder="Share your requirements, timelines, and purchasing structure." class="w-full rounded-2xl border border-[#E8C98F]/40 bg-[#050914] px-3.5 py-2 text-xs text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-[#D4AF37] focus:border-[#D4AF37] transition-all"></textarea>
+                  </div>
+                  <div class="flex flex-wrap items-center justify-between gap-3 pt-1">
+                    <p class="text-[10px] text-slate-400 max-w-[230px]">
+                      Your details are handled with strict confidentiality. NDAs can be signed prior to information release.
+                    </p>
+                    <button type="submit" class="inline-flex items-center justify-center rounded-full border border-[#D4AF37] bg-[#D4AF37] px-5 py-2 text-[11px] tracking-[0.25em] uppercase text-[#0D0D0D] hover:bg-[#D4AF37]/90 hover:shadow-[0_0_26px_rgba(212,175,55,0.8)] hover:-translate-y-[1px] transition-all duration-200">
+                      Request Details
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section id="testimonials" class="relative py-20 sm:py-24 bg-[#050914]">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10 sm:mb-12">
+            <div>
+              <p class="text-[11px] tracking-[0.26em] uppercase text-[#E8C98F]">Client Impressions</p>
+              <h2 class="mt-2 text-2xl sm:text-3xl tracking-tight text-white" style="font-family:'Playfair Display',ui-serif;">
+                Quietly trusted by families, executives, and investors.
+              </h2>
+            </div>
+            <p class="text-[11px] text-slate-300 max-w-xs">
+              Select testimonials from clients who value discretion, precision, and long-term partnership.
+            </p>
+          </div>
+
+          <div class="grid lg:grid-cols-3 gap-6">
+            <!-- Testimonial 1 -->
+            <article class="rounded-2xl border border-white/15 bg-[#0D0D0D]/95 px-5 py-6 shadow-[0_20px_60px_rgba(0,0,0,1)]">
+              <div class="flex items-start justify-between gap-3">
+                <div class="flex items-center gap-3">
+                  <div class="h-8 w-8 rounded-full border border-[#D4AF37]/90 flex items-center justify-center bg-[#050914]">
+                    <svg data-lucide="quote" class="w-4 h-4 text-[#D4AF37]" stroke-width="1.5" fill="none"></svg>
+                  </div>
+                  <div class="text-xs">
+                    <p class="text-slate-50">Family Office, Europe</p>
+                    <p class="text-[11px] text-slate-400 tracking-[0.22em] uppercase">Multi-Generational Client</p>
+                  </div>
+                </div>
+                <div class="h-9 w-9 rounded-full border border-[#E8C98F]/90 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&amp;fit=crop&amp;w=200&amp;q=80" alt="Client portrait" class="w-full h-full object-cover">
+                </div>
+              </div>
+              <p class="mt-4 text-[13px] text-slate-100 leading-relaxed">
+                “They understand that our priority is capital preservation and privacy. Every acquisition has been executed with institutional-level rigor yet private-banking discretion.”
+              </p>
+            </article>
+
+            <!-- Testimonial 2 -->
+            <article class="rounded-2xl border border-white/15 bg-[#0D0D0D]/95 px-5 py-6 shadow-[0_20px_60px_rgba(0,0,0,1)]">
+              <div class="flex items-start justify-between gap-3">
+                <div class="flex items-center gap-3">
+                  <div class="h-8 w-8 rounded-full border border-[#D4AF37]/90 flex items-center justify-center bg-[#050914]">
+                    <svg data-lucide="quote" class="w-4 h-4 text-[#D4AF37]" stroke-width="1.5" fill="none"></svg>
+                  </div>
+                  <div class="text-xs">
+                    <p class="text-slate-50">Tech Founder, US</p>
+                    <p class="text-[11px] text-slate-400 tracking-[0.22em] uppercase">Private Client</p>
+                  </div>
+                </div>
+                <div class="h-9 w-9 rounded-full border border-[#E8C98F]/90 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&amp;fit=crop&amp;w=200&amp;q=80" alt="Client portrait" class="w-full h-full object-cover">
+                </div>
+              </div>
+              <p class="mt-4 text-[13px] text-slate-100 leading-relaxed">
+                “From shortlisting to negotiation and structuring, the process was seamless. They filtered the noise so I only saw assets truly aligned with my lifestyle and tax needs.”
+              </p>
+            </article>
+
+            <!-- Testimonial 3 -->
+            <article class="rounded-2xl border border-white/15 bg-[#0D0D0D]/95 px-5 py-6 shadow-[0_20px_60px_rgba(0,0,0,1)]">
+              <div class="flex items-start justify-between gap-3">
+                <div class="flex items-center gap-3">
+                  <div class="h-8 w-8 rounded-full border border-[#D4AF37]/90 flex items-center justify-center bg-[#050914]">
+                    <svg data-lucide="quote" class="w-4 h-4 text-[#D4AF37]" stroke-width="1.5" fill="none"></svg>
+                  </div>
+                  <div class="text-xs">
+                    <p class="text-slate-50">Institutional Investor, Asia</p>
+                    <p class="text-[11px] text-slate-400 tracking-[0.22em] uppercase">Investment Mandate</p>
+                  </div>
+                </div>
+                <div class="h-9 w-9 rounded-full border border-[#E8C98F]/90 overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&amp;fit=crop&amp;w=200&amp;q=80" alt="Client portrait" class="w-full h-full object-cover">
+                </div>
+              </div>
+              <p class="mt-4 text-[13px] text-slate-100 leading-relaxed">
+                “Their deal flow in core European and US markets has been consistently high calibre. We see them as an extension of our investment team.”
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- BOOK A CONSULTATION -->
+      <section id="consultation" class="relative py-20 sm:py-24 bg-[#050914]">
+        <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <div class="relative">
+            <div class="absolute -inset-0.5 rounded-3xl border border-[#D4AF37]/60 bg-[radial-gradient(circle_at_top,_rgba(212,175,55,0.35),_transparent_60%)] opacity-80"></div>
+            <div class="relative rounded-3xl border border-white/10 bg-[#0D0D0D]/95 px-5 sm:px-8 py-7 sm:py-9 shadow-[0_26px_80px_rgba(0,0,0,1)]">
+              <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 mb-6">
+                <div>
+                  <p class="text-[11px] tracking-[0.26em] uppercase text-[#E8C98F]">Private Consultation</p>
+                  <h2 class="mt-2 text-2xl sm:text-3xl tracking-tight text-white" style="font-family:'Playfair Display',ui-serif;">
+                    Schedule a confidential strategy session.
+                  </h2>
+                  <p class="mt-2 text-sm text-slate-200 max-w-xl">
+                    Share your objectives and we will align a senior advisor to discuss acquisition strategy, portfolio restructuring, or discreet disposal.
+                  </p>
+                </div>
+                <div class="text-xs text-slate-300">
+                  <p class="tracking-[0.24em] uppercase text-slate-400 mb-1">Availability</p>
+                  <p>Monday – Friday</p>
+                  <p>08:00 – 20:00 (Client time zone)</p>
+                </div>
+              </div>
+
+              <form class="grid md:grid-cols-[1.1fr,0.9fr] gap-5 text-xs">
+                <div class="space-y-3">
+                  <div>
+                    <label class="block mb-1 text-[11px] tracking-[0.22em] uppercase text-slate-200">Full Name</label>
+                    <input type="text" placeholder="Your name" class="w-full rounded-full border border-[#E8C98F]/40 bg-[#050914] px-3.5 py-2 text-xs text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-[#D4AF37] focus:border-[#D4AF37] transition-all">
+                  </div>
+                  <div>
+                    <label class="block mb-1 text-[11px] tracking-[0.22em] uppercase text-slate-200">Email</label>
+                    <input type="email" placeholder="you@example.com" class="w-full rounded-full border border-[#E8C98F]/40 bg-[#050914] px-3.5 py-2 text-xs text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-[#D4AF37] focus:border-[#D4AF37] transition-all">
+                  </div>
+                  <div>
+                    <label class="block mb-1 text-[11px] tracking-[0.22em] uppercase text-slate-200">Phone</label>
+                    <input type="text" placeholder="+1 ..." class="w-full rounded-full border border-[#E8C98F]/40 bg-[#050914] px-3.5 py-2 text-xs text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-[#D4AF37] focus:border-[#D4AF37] transition-all">
+                  </div>
+                  <div>
+                    <label class="block mb-1 text-[11px] tracking-[0.22em] uppercase text-slate-200">Preferred Time Zone</label>
+                    <input type="text" placeholder="e.g. GMT, EST, GST" class="w-full rounded-full border border-[#E8C98F]/40 bg-[#050914] px-3.5 py-2 text-xs text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-[#D4AF37] focus:border-[#D4AF37] transition-all">
+                  </div>
+                </div>
+                <div class="space-y-3">
+                  <div>
+                    <label class="block mb-1 text-[11px] tracking-[0.22em] uppercase text-slate-200">Objective</label>
+                    <select class="w-full rounded-full border border-[#E8C98F]/40 bg-[#050914] px-3.5 py-2 text-xs text-slate-100 focus:outline-none focus:ring-1 focus:ring-[#D4AF37] focus:border-[#D4AF37] transition-all">
+                      <option class="bg-[#050914]">Acquire a property</option>
+                      <option class="bg-[#050914]">Sell a property</option>
+                      <option class="bg-[#050914]">Portfolio strategy</option>
+                      <option class="bg-[#050914]">Institutional mandate</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="block mb-1 text-[11px] tracking-[0.22em] uppercase text-slate-200">Estimated Budget</label>
+                    <input type="text" placeholder="e.g. US$ 10M – 50M" class="w-full rounded-full border border-[#E8C98F]/40 bg-[#050914] px-3.5 py-2 text-xs text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-[#D4AF37] focus:border-[#D4AF37] transition-all">
+                  </div>
+                  <div>
+                    <label class="block mb-1 text-[11px] tracking-[0.22em] uppercase text-slate-200">Notes</label>
+                    <textarea rows="3" placeholder="Share any timelines, preferred markets, or specific requirements." class="w-full rounded-2xl border border-[#E8C98F]/40 bg-[#050914] px-3.5 py-2 text-xs text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-[#D4AF37] focus:border-[#D4AF37] transition-all"></textarea>
+                  </div>
+                </div>
+
+                <div class="md:col-span-2 flex flex-wrap items-center justify-between gap-4 pt-1">
+                  <div class="flex items-center gap-2 text-[11px] text-slate-400">
+                    <span class="inline-flex h-4 w-4 items-center justify-center rounded border border-[#E8C98F]/60 bg-[#050914]">
+                      <span class="h-2 w-2 rounded bg-[#D4AF37]/80"></span>
+                    </span>
+                    <span>By submitting, you consent to a confidential follow-up by a senior advisor.</span>
+                  </div>
+                  <button type="submit" class="inline-flex items-center justify-center rounded-full border border-[#D4AF37] bg-[#D4AF37] px-6 py-2.5 text-[11px] tracking-[0.25em] uppercase text-[#0D0D0D] hover:bg-[#D4AF37]/90 hover:shadow-[0_0_30px_rgba(212,175,55,0.85)] hover:-translate-y-[1px] transition-all duration-200">
+                    Schedule a Luxury Tour
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="border-t border-white/10 bg-[#0D0D0D]">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8 sm:py-9">
+          <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-8 text-xs">
+            <!-- Left -->
+            <div class="space-y-3">
+              <div class="flex items-center gap-3">
+                <div class="flex items-center justify-center h-8 w-8 rounded-full border border-[#D4AF37]/80 bg-[#050914]">
+                  <span class="text-xs tracking-[0.3em] text-[#D4AF37]" style="font-family:'Playfair Display',ui-serif;">AE</span>
+                </div>
+                <div class="text-[11px] text-slate-200">
+                  <p class="tracking-[0.3em] uppercase">Aurelius Estates</p>
+                  <p class="text-[11px] text-slate-400 mt-1">Ultra-Premium Real Estate Advisors</p>
+                </div>
+              </div>
+              <p class="text-[11px] text-slate-500">
+                © Aurelius Estates. All rights reserved. Transactions subject to AML / KYC and local regulatory requirements.
+              </p>
+            </div>
+
+            <!-- Middle Links -->
+            <div class="grid grid-cols-2 gap-8 text-[11px] text-slate-300">
+              <div>
+                <p class="tracking-[0.26em] uppercase text-slate-400 mb-2">Company</p>
+                <ul class="space-y-1.5">
+                  <li><a href="#about" class="hover:text-[#D4AF37] transition-colors">About Us</a></li>
+                  <li><a href="#featured" class="hover:text-[#D4AF37] transition-colors">Properties</a></li>
+                  <li><a href="#consultation" class="hover:text-[#D4AF37] transition-colors">Consultation</a></li>
+                </ul>
+              </div>
+              <div>
+                <p class="tracking-[0.26em] uppercase text-slate-400 mb-2">Legal</p>
+                <ul class="space-y-1.5">
+                  <li><a href="#" class="hover:text-[#D4AF37] transition-colors">Privacy Policy</a></li>
+                  <li><a href="#" class="hover:text-[#D4AF37] transition-colors">Terms &amp; Conditions</a></li>
+                  <li><a href="#" class="hover:text-[#D4AF37] transition-colors">Regulatory Notices</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Right Social / Contact -->
+            <div class="space-y-3 text-[11px] text-slate-300">
+              <p class="tracking-[0.26em] uppercase text-slate-400">Connect</p>
+              <div class="flex flex-wrap gap-3">
+                <a href="#" class="inline-flex items-center gap-1 rounded-full border border-[#D4AF37]/70 px-3 py-1.5 text-[11px] text-slate-100 hover:bg-[#050914] hover:text-[#D4AF37] transition-colors">
+                  <svg data-lucide="linkedin" class="w-3.5 h-3.5 text-[#D4AF37]" stroke-width="1.5" fill="none"></svg>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="#" class="inline-flex items-center gap-1 rounded-full border border-[#D4AF37]/70 px-3 py-1.5 text-[11px] text-slate-100 hover:bg-[#050914] hover:text-[#D4AF37] transition-colors">
+                  <svg data-lucide="instagram" class="w-3.5 h-3.5 text-[#D4AF37]" stroke-width="1.5" fill="none"></svg>
+                  <span>Instagram</span>
+                </a>
+                <a href="#" class="inline-flex items-center gap-1 rounded-full border border-[#D4AF37]/70 px-3 py-1.5 text-[11px] text-slate-100 hover:bg-[#050914] hover:text-[#D4AF37] transition-colors">
+                  <svg data-lucide="mail" class="w-3.5 h-3.5 text-[#D4AF37]" stroke-width="1.5" fill="none"></svg>
+                  <span>Investor Briefing</span>
+                </a>
+              </div>
+              <div class="pt-1 text-slate-400">
+                <p>Client Services: <span class="text-slate-200">concierge@aureliusestates.com</span></p>
+                <p class="mt-1">Global: +44 (0)20 0000 0000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (window.lucide) {
+        window.lucide.createIcons();
+      }
+    });
+  </script>
+
+</body></html>
